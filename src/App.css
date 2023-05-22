@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Style top page */
+.hautpage{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content:space-between;
+  height:80px;
+  width: 100%;
+  background-color: aquamarine;
+  position: fixed;
+  margin-bottom: 50px;
+  z-index: 1;
+  position: top;
+ padding:25px;
 }
+/* Style the search input*/
+input{
+  height: 30px;
+  width:200px;
 
-.App-link {
-  color: #61dafb;
+
+  }
+  /* Style the cercle that contain the first letter */
+.cercle-container{
+  margin-left:30% ;
+  display:flex;
+  border-radius: 50%;
+  margin-top: -50px;
+  height:100px;
+  width: 100px;
+  justify-content:center;
+  align-items:center;
+  background-image: radial-gradient( circle 916px at -1.1% 50.2%,  rgb(16, 233, 197) 20%, rgba(0,176,228,1) 100.2% );
+border: solid grey 5px;
 }
+/* style the parent container */
+.parent-container{
+  display:flex;
+  flex-wrap:wrap;
+  width:90%;
+   margin:0px auto;
+  position: relative;
+  top:100px;
+    }
+.pcontainer{
+  
+  height:350px;
+  width:250px;
+  margin:20px;
+  background-image: radial-gradient( circle 916px at -1.1% 50.2%,  rgba(16,233,139,1) 13%, rgba(0,176,228,1) 100.2% );
+border-radius: 25px;
+}
+/* Style the top of the card */
+.top-container{
+  border-top-left-radius:25px ;
+  border-top-right-radius:25px;
+  width:250px ;
+  height:100px;
+  background-color: rgb(42, 111, 172);
+}
+/* Style the middle of the card */
+.middle-container{
+  text-align: center;
+  width:250px;
+  height: 80px;
+  background-image: radial-gradient( circle 916px at -1.1% 50.2%,  rgba(16,233,139,1) 13%, rgba(0,176,228,1) 100.2% );
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+p{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+/* Style the bottom of the card */
+.bottom-container{
+  text-align: justify;
+  width:250px;
+  height: 120px;
+  background-color: rgb(207, 164, 248);
+  margin-bottom:20px;
+  padding-top: 20px;
 }
